@@ -42,6 +42,8 @@ services:
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
       #- NGROK_HOST="https://thievish-profanely-margaret.ngrok-free.dev"
+    depends_on:
+      - ollama
     networks:
       - ollama-docker
 
